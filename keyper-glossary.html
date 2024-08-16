@@ -1,0 +1,871 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="resources/sheet.css">
+<style type="text/css">
+  table {
+    color: #000000;
+    font-family: Arial;
+    font-size: 10pt;
+    direction: ltr;
+    overflow: hidden;
+    vertical-align: top;
+  }
+
+  td {
+    padding: 2px 3px 2px 3px;
+    border-bottom: 1px SOLID #666666;
+    word-wrap: break-word;
+  }
+
+  .key {
+    text-align: center;
+  }
+
+  .main-title {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .village {
+    background-color: #ffe599;
+    white-space: normal;
+  }
+
+  .farm {
+    background-color: #6aa84f;
+    white-space: normal;
+  }
+
+  .farm-or-village {
+    background-color: #adb540;
+    white-space: normal;
+  }
+
+  .store {
+    background-color: lightgray;
+    white-space: normal;
+  }
+
+  .footnote {
+    text-align: left;
+    font-size: 9pt;
+  }
+
+  .title div {
+    margin: 3px;
+  }
+
+  .title-name {
+    font-weight: bold;
+  }
+
+  .inline {
+    display: inline-block;
+  }
+
+  tr .keyper {
+    background-image: url('./key.png');
+    height: 12px;
+    width: 12px;
+    background-size: 12px, 12px;
+  }
+
+  tr .character-edition {
+    background-image: url('./character.png');
+    height: 12px;
+    width: 12px;
+    background-size: 12px, 12px;
+  }
+
+  tr .leader {
+    background-image: url('./crown.png');
+    height: 12px;
+    width: 12px;
+    background-size: 12px, 12px;
+  }
+
+  tr .keyper-at-sea {
+    background-image: url('./fish.png');
+    height: 8px;
+    width: 16px;
+    background-size: 16px, 10px;
+  }
+
+  tr .home {
+    background-image: url('./home.png');
+    height: 12px;
+    width: 12px;
+    background-size: 12px;
+  }
+
+  tr .store {
+    background-image: url('./store.png');
+    height: 16px;
+    width: 12px;
+    background-size: 12px, 12px;
+  }
+
+  tr .spring {
+    background-image: url('./spring.png');
+    height: 12px;
+    width: 12px;
+    background-size: 12px, 12px;
+  }
+
+  tr .summer {
+    background-image: url('./summer.png');
+    height: 12px;
+    width: 12px;
+    background-size: 12px, 12px;
+  }
+
+</style>
+<div>
+  <table cellspacing="1" cellpadding="1">
+    <tbody>
+      <tr class="">
+        <td colspan="2" style="text-align: center"><span class="main-title">Keyper Tile Glossary</span><br/>v0.2</td>
+        <td class="key">
+          (<div class="keyper inline"></div> Keyper,
+            <div class="keyper-at-sea inline"></div> Keyper at Sea,
+            <div class="character-edition inline"></div> Character Edition,
+            <div class="leader inline"></div> Leader Promo)
+          <br>
+          (<div class="home inline"></div> Home tile,
+            <div class="spring inline"></div> Spring country tile,
+            <div class="summer inline"></div> Non-spring country tile,
+            <div class="store inline"></div> Store tile)
+          </td>
+      </tr>
+      <tr>
+        <td style="height:3px;"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Alchemist</span><br>Village</td>
+        <td>
+          <b>Action:</b> Convert any 2 raw materials to any 1 gem.
+          <b>Score:</b> 3 VP.
+          <b>Upgraded Action:</b> Conversion is now 1:1.
+          <b>Upgraded Score:</b> 5 VP.
+        </td>
+      </tr>
+      <tr class="farm-or-village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Angler</span><br>Farm or Village</td>
+        <td>
+          <b>Cost:</b> 1 fish.
+          <b>Holds:</b> Up to 4 crab or squid.
+          <b>Score:</b>2 VP / crab (but not squid.)<br>
+          <b>Upgraded Score:</b> 3 VP / crab
+          <i>and </i> squid. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Barbers<br></span>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / <i>male keyple without a beard</i>, up to 4 times.
+          <b>Upgraded Score:</b> 2 VP each.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Barn</b><br>Farm</td>
+        <td>
+          <b>Score:</b> 1 VP / farm building tile on your player board.<br>
+          <b>Upgraded Score:</b> 2 VP / <i>upgraded</i> farm building tile. <b>Max Score:</b> 8/16 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Boarding house</span><br>Village</td>
+        <td>
+          <b>Score:</b> 2 VP / village tile built to the left and right of this tile.
+          <b>Note:</b> Farm tiles do not count.
+          <b>Upgraded Score:</b> Also 2 VP for village tiles built above and below this tile. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Boatman<br></span>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / light-blue keyple you own, up to 4 keyples.
+          <b>Note:</b> white keyples can be used as any color.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Bracelet maker<br></span>Village</td>
+        <td>
+          <b>Score:</b> 4 VP / emerald and sapphire pair, allocated to this tile, up to 4 pairs.<br>
+          <b>Upgraded Score:</b> 6 VP / emerald, sapphire and ruby triplet. <b>Max Score:</b> 16/24 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Bricklayer<br></span>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / orange keyple you own, up to 4 keyples.
+          <b>Note:</b> white keyples can be used as any color.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Brickmaker<br></span>Village</td>
+        <td>
+          <b>Action:</b> Convert 1 clay into 1 brick.
+          <b>Upgraded Action:</b> Conversion is now 1:2.
+          <b>Upgraded Score:</b> 5 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Brickyard<br></span>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / brick, up to 4 bricks.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="farm-or-village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper-at-sea"></div><br></td>
+        <td class="title"><span class="title-name">Brown/greenfield site<br></span>Farm or Village</td>
+        <td>
+          <b>Effect:</b> Place this at the same time as, and underneath, another tile. It changes the space from brown to green or vice versa.
+          <b>Cost:</b> No additional cost.
+          <b>Note:</b> You may only use this on the bottom row of your board.
+          <b>Note:</b> Building this tile does not require a separate build action.
+          <b>Effect:</b> Affects end-game scoring for barn, boarding house, drainage, pavements, statue and thatcher.
+          <b>Note:</b> Does not count as overbuilding.
+          <b>Note:</b>Does not affect scoring for the hirer, oast house or village hall.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Builder<br></span>Village</td>
+        <td>
+          <b>Effect:</b> Any building tile can be built at a cost of 1 finished good. (The build cost shown on the tile being built is irrelevant.) <b>Upgrade Effect:</b> Any building tile can be built with either 1 finished good or 1 wheat.
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Building plot<br></span>Village</td>
+        <td>
+          <b>Effect:</b> The plot to the right of this tile can be built at no cost.
+          <b>Upgraded Effect:</b> The plots above and below this tile may be built at no cost.
+          <b>Note:</b> A normal build action is necessary for to build on those plots, just ignoring the building's costs.
+          <b>Score:</b>1 VP.<b> Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Carpenter<br></span>Village</td>
+        <td>
+          <b>Action:</b> Convert 1 log (brown cube) into 1 wood (brown octagonal token).<br>
+          <b>Upgraded Action:</b> Conversion is now 1:2.
+          <b>Upgraded Score:</b> 5 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Cluck cluck<br>chicken house</b> Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 chickens.
+          <b>Score:</b> 2 VP / chicken.<br>
+          <b>Upgraded Score:</b> 3 VP each. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Co-workers<br></span>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / male/female pair of any color, up to 4 times.<br>
+          <b>Upgraded Score:</b> 3 VP each. <b>Max Score:</b> 4/12 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Copse<br></b>Farm</td>
+        <td>
+          <b>Holds:</b> Any 4 of chicken, deer, goat, or wild boar.
+          <b>Action:</b> Convert 1 wood into 1 chicken, deer, goat, or wild boar.
+          <b>Upgraded Action:</b> Conversion is now 1:2 (any 2).<br>
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Cow shed<br></b>Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 cows.
+          <b>Score:</b> 1 VP / cow.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="farm-or-village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Crabber<br></span>Farm or Village</td>
+        <td>
+          <b>Cost:</b> 1 fish.
+          <b>Holds:</b> Up to 4 crab or lobster.
+          <b>Score: </span>2 VP / crab (but not lobster.) <b>Upgraded Score:</b> 3 VP / lobster <i>and</i> crab. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Developer<br></span>Village</td>
+        <td>
+          <b>Score:</b> 3 VP / country tile overbuilt by another country tile.
+          <b>Upgraded Score:</b> 6 VP each.
+          <b>NOTE:</b> Building over brownfield or greenfield site does not count. <b>Max Score:</b> 12/24 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Dock</span><br>Village</td>
+        <td>
+          <b>Score:</b> 6 VP IF the owner has scored 20 shipping points during the game.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Drainage<br></span>Village</td>
+        <td>
+          <b>Score:</b> 1 VP, plus 1 VP / village (not farm) positioned diagonally to this tile.
+          <b>Note:</b> Gaps are allowed.
+          <b>Upgraded Score:</b> 2 VP, plus 2 VP / orthogonal village. (Max 5/10 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Emporium<br></span>Village</td>
+        <td>
+          <b>Score:</b> 4 VP / ruby and sapphire pair, allocated to this tile, up to 4 pairs.<br>
+          <b>Upgraded Score:</b> 6 VP / ruby, sapphire and gold triplet. <b>Max Score:</b> 16/24 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Entertainer<br></span>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / season the owner held at least 1 fair.<br>
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Farm labourer<br></b>Farm</td>
+        <td>
+          <b>Effect:</b> Building farms is now free for you.
+          <b>Upgraded Effect:</b> Building and upgrading farms is now free for you.
+          <b>Upgraded Score:</b> 3 VP.
+          <b>Note:</b> Two actions on this tile could build or upgrade two different tiles, or even the same tile.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Farmer</b><br>Farm</td>
+        <td>
+          <b>Score:</b> 1 VP / light-green keyple you own, up to 4 keyples.
+          <b>Note:</b> white keyples can be used as any color.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Farmer’s cottage</b><br>Farm</td>
+        <td>
+          <b>Score:</b> 1 VP / light green-bordered field on your country board at the end of the year.
+          <b>Upgraded Score: 3</b> VP each. <b>Max Score:</b> 3/9 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Farmyard</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> Up to 4 cow, horse, pig and sheep.
+          <b>Score:</b> 1 VP / different animal held here.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="store">
+        <td class="title"><div class="store inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><b>Finished goods store</b> Store</td>
+        <td>
+          <b>Score:</b> 2 VP / finished goods on this tile, up to 4.
+          <b>Upgrade Cost:</b> 1 finished good or wheat.
+          <b>Upgraded Score:</b> 3 VP autumn fair tile held. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="farm-or-village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Fisher</span><br>Farm or Village</td>
+        <td>
+          <b>Cost:</b> 1 fish.
+          <b>Holds:</b> Up to 4 mussels or squid.
+          <b>Score:</b>2 VP / mussel. (Not squid.) <b>Upgraded Score:</b> 3 VP / mussel <i>and</i> squid. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Fisherman’s hut</span><br>Village</td>
+        <td>
+          <b>Score:</b> 4 VP / gold and sapphire pair, allocated to this tile, up to 4 pairs.
+          <b>Upgraded Score:</b> 6 VP / gold, sapphire and emerald triplet. <b>Max Score:</b> 16/24 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Game warden’s cottage</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 deer.
+          <b>Score:</b> 2 VP / deer.
+          <b>Upgraded Score:</b> 3 VP / deer. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Gem dealer</span><br>Village</td>
+        <td>
+          <b>Action:</b> Convert 1 gem into 1 gem of any type.
+          <b>Upgraded Action:</b> Conversion is now 1:2.
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Gem merchant</span><br>Village</td>
+        <td>
+          <b>Score:</b> 4 VP / emerald and gold pair, allocated to this tile, up to 4 pairs.<br>
+          <b>Upgraded Score:</b> 6 VP / emerald, gold and ruby triplet. <b>Max Score:</b> 16/24 VP.
+        </td>
+      </tr>
+      <tr class="store">
+        <td class="title"><div class="store inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><b>Gems store</b><br>Store</td>
+        <td>
+          <b>Score:</b> 1 VP / gem on this tile, up to 4.
+          <b>Upgrade Cost:</b> 1 gem.<br>
+          <b>Upgraded Score:</b> 3 VP / oyster on this tile, up to 4. <b>Max Score:</b> 4/12 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Goat pen</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 goats.
+          <b>Score:</b> 2 VP / goat.
+          <b>Upgraded Score:</b> 3 VP each. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Goldsmith</span><br>Village</td>
+        <td>
+          <b>Score:</b> 4 VP / gold and sapphire pair, allocated to this tile, up to 4 pairs.<br>
+          <b>Upgraded Score:</b> 6 VP / gold, sapphire and emerald triplet. <b>Max Score:</b> 16/24 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br>
+          <br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Guide</span><br>Village</td>
+        <td>
+          <b>Action:</b> Each activation, you may take 1 country tile from the discard pile.
+          <b>Upgraded Action:</b> You may take from either the discard pile or current display of 8 tiles.
+          <b>Score:</b> 1 VP.
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Hirer</span><br>Village</td>
+        <td>
+          <b>Action:</b> Each activation you may discard all 8 country tiles currently on display, replace these with 8 new country tiles and then take 1 of the new country tiles.
+          <b>Score:</b> 1 VP.
+          <b>Upgraded Score:</b> 1 VP, plus 1 VP / pair of building tiles (farm or village) on the player’s board. <b>Max Score:</b> 10 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Hop field</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> 4 animals of any type.
+          <b>Action:</b> Convert 1 wheat to an animal of any type.
+          <b>Upgraded Action:</b> Conversion is now 1:2.
+          <b>Upgraded</b> <b>Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Hunter’s lodge</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 wild boar.
+          <b>Score:</b> 2 VP / wild boar.
+          <b>Upgraded Score:</b> 3 VP each. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="farm-or-village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Ice house</span><br>Farm or Village</td>
+        <td>
+          <b>Cost:</b> 1 fish. Any 4 of the following sea creatures can be housed in the ice house: crab, lobster, mussel or squid.
+          <b>Scores:</b> 1 VP / type of creature on this tile.<br>
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.</td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Jewel cutter</span><br>Village</td>
+        <td>
+          <b>Action:</b> Convert 1 stone into 1 gem of any type.
+          <b>Upgraded Action:</b> Conversion is now 1:2.
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Jeweller</span><br>Village</td>
+        <td>
+          <b>Score:</b> 4 VP / emerald and ruby pair, allocated to this tile, up to 4 pairs.
+          <b>Upgraded Score:</b> 6 VP / emerald, ruby, and sapphire triplet. <b>Max Score:</b> 16/24 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title">Key Market<br>Village</td>
+        <td>
+          <b>Action:</b> Convert 2 of any cubes, octagonal tokens, wheat, or gems, into 1 cube, octagonal token, wheat, or gem.
+          <b>Score:</b> 3 VP.
+          <b>Upgraded Action:</b> Conversion is now 1:1.
+          <b>Upgraded Score:</b> 5 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Key workers</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / female keyple you own, up to 4 keyples.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Kiln</span><br>Village</td>
+        <td>
+          <b>Score:</b> 2 VP / orange-bordered field on your country board.
+          <b>Upgraded Score:</b> 4 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="leader"></td>
+        <td class="title"><span class="title-name">Leader</span><br>Village<br></td>
+        <td>
+          <b>Action:</b> Play 2 additional keyples of the same color from your keyp onto <i>one</i> empty location on a country board. This has the effect of activating the new location four times, or even six if there's a color match.
+          <b>Note:</b> White keyples can be used as any color.
+          <b>Upgraded Action:</b> May place the keyples on a country board, or your own player board.
+          <b>Upgraded Score:</b> 1 VP.
+          <b>Warning:</b> This is a difficult tile to play correctly and effectively. The rules are complicated; read them.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Livestock market</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> 4 animals of any type.
+          <b>Action:</b> Convert 1 animal to another animal of any type.
+          <b>Upgraded Action:</b> Conversion is now 1:2.
+          <b>Upgraded</b> <b>Score:</b> 1 VP.
+        </td>
+      </tr>
+      <tr class="farm-or-village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Lobster catcher</span><br>Farm or Village</td>
+        <td>
+          <b>Cost:</b> 1 fish.
+          <b>Holds:</b> Up to 4 lobster or mussels.
+          <b>Score:</b>2 VP / lobster (Not mussels.) <b>Upgraded Score:</b> 3 VP / lobster <i>and</i> mussel. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Log cabin</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / brown-bordered field on your country board.
+          <b>Upgraded Score:</b> 3 VP each. <b>Max Score:</b> 3/9 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Lumberjack</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / brown keyple you own, up to 4 keyples.
+          <b>Note:</b> white keyples can be used as any color.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Merchant<br></span>Village</td>
+        <td>
+          <b>Upgrade Effect:</b> When using a boat tile take one additional boat action. This makes it possible to make 4 transactions on a boat tile.
+          <b>Score:</b> 3 VP. </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Mine</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / black-bordered field on your country board.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Miner</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / black keyple you own, up to 4 keyples.
+          <b>Note:</b> white keyples can be used as any color.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Nurse</span><br>Village</td>
+        <td>
+          <b>Note:</b> Only activated by female keyples.
+          <b>Action:</b> Stand up any keyples on a country board claimed by their keyper.
+          <b>Upgraded Action:</b> Also stand up any keyples on their player board.
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Oast house</b><br>Farm</td>
+        <td>
+          <b>Score:</b> 4 VP IF all 8 of your farm plots contain a building tile.
+          <b>Upgraded Score:</b> 8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Open pit</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / grey-bordered field on your country board.
+          <b>Upgraded Score:</b> 3 VP each. <b>Max Score:</b> 3/9 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Paddock</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> Up to 4 chicken, deer, goat, wild boar.
+          <b>Score:</b> 1 VP / different animal held here.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Pavements</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP, plus 1 VP / village (not farm) positioned orthogonally to this tile.
+          <b>Note:</b> Gaps are allowed.
+          <b>Upgraded Score:</b> 2 VP, plus 2 VP / orthogonal village. (Max 6/12 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Pig sty</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 pigs.
+          <b>Score:</b> 1 VP / pig.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Prospector</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / gem (of any type) allocated to this tile, up to 4 gems.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Quarryman</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / grey keyple you own, up to 4 keyples.
+          <b>Note:</b> white keyples can be used as any color.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="store">
+        <td class="title"><div class="store inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Raw Material store</span><br>Store</td>
+        <td>
+          <b>Score:</b> 2 VP / raw material cube, up to 4.
+          <b>Upgrade Cost:</b> 1 raw material or wheat.
+          <b>Upgraded Score:</b> 6 VP / set of orange, brown, and gray cube, up to 4 sets. <b>Max Score:</b> 8/24 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Retirement home</span><br>Village</td>
+        <td>
+          <b>Score:</b> 2 VP / male keyple on their country board, up to a maximum of 4 keyples.
+          <b>Upgraded Score:</b> 3 VP / <i>female</i> keyple on their country board.
+          <b>Note:</b> keyples on the player board do not count. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Ring maker</span><br>Village</td>
+        <td>
+          <b>Score:</b> 4 VP / gold and ruby pair, allocated to this tile, up to 4 pairs.
+          <b>Upgraded Score:</b> 6 VP / gold, ruby and emerald triplet. <b>Max Score:</b> 16/24 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Scrapyard</span><br>Village</td>
+        <td>
+          <b>Action:</b> Convert any 2 raw materials of any type into 1 finished good of any type <b>Upgraded Action:</b> Conversion is now 1:1.
+          <b>Upgraded</span> <b>Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Seafarer</span><br>Village</td>
+        <td>
+          <b>Effect:</b> Whenever you play on a boat tile, score 1 <i>shipping</i> point immediately on the shipping track.
+          <b>Upgraded Effect:</b> Score 2 shipping points instead.
+          <b>NOTE:</b> Joining onto a boat that already has a keyple, and laying down two keyples, 1 boat action.
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Sheep shelter</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 sheep.
+          <b>Score:</b> 1 VP / sheep.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Shipping agent</span><br>Village</td>
+        <td>
+          <b>Effect:</b> When you sell two resources to a boat on a turn, gain 1 VP immediately.
+          <b>Upgraded Effect:</b> 1 VP immediately / resource you sell to a boat.
+          <b>Upgraded Score:</b> 3 VP.
+        </td>
+      </tr>
+      <tr class="farm-or-village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><span class="title-name">Smoke house</span><br>Farm or Village</td>
+        <td>
+          <b>Cost:</b> 1 fish.
+          <b>Holds:</b> Up to 4 fish.
+          <b>Score:</b> 1 VP / fish.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="character-edition"></div></td>
+        <td class="title"><span class="title-name">Specialists</span><br>Village</td>
+        <td>
+          <b>Score:</b> 2 VP / pair of male and female keyples of the same color, up to a maximum of 4 pairs.
+          <b>Upgraded Score:</b> 3 VP / pair. <b>Max Score:</b> 8/12 VP.
+        </td>
+      </tr>
+      <tr class="farm">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><b>Stable</b><br>Farm</td>
+        <td>
+          <b>Holds:</b> up to 4 horses.
+          <b>Score:</b> 1 VP / horses.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Statue</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / home village (not farm) built in their village.
+          <b>Upgraded Score:</b> 2 VP / <i>upgraded</i> home (not farm) village tile. (Non-upgraded tiles excluded.) <b>Max Score:</b> 6/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="home inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Stonemason</span><br>Village</td>
+        <td>
+          <b>Action:</b> Convert 1 rock into 1 stone.
+          <b>Upgraded Action:</b> Conversion is now 1:2.
+          <b>Upgraded Score:</b> 5 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Stoneyard</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / stone, up to 4 stone.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Thatcher</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / 2 village tiles you have built, including this tile.
+          <b>Note:</b> Farm tiles do not count.
+          <b>Upgraded score: </span>1 VP / every <span style="font-style:italic;">one</b> <i>upgraded</i> villiage tile. Non-upgraded villiages don't count. <b>Max Score:</b> 6/12 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="summer inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Timberyard</span><br>Village</td>
+        <td>
+          <b>Score:</b> 1 VP / wood, up to 4 wood.
+          <b>Upgraded Score:</b> 2 VP each. <b>Max Score:</b> 4/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Trading post</span><br>Village</td>
+        <td>
+          <b>Action:</b> Exchange 1 raw material for <i>any</i> 2 raw materials, <i>or</i> 1 finished good into <i>any</i> 2 finished good.
+          <b>Upgraded Action: </span>Replace <span style="font-style:italic;">or</b> with<i> and.</i> <b>Upgraded Score:</b> 3 VP.
+          <b>Note:</b> You may not use wheat here.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring"></div><div class="keyper"></div></td>
+        <td class="title"><span class="title-name">Village hall</span><br>Village</td>
+        <td>
+          <b>Score:</b> 6 VP IF all 12 plots in the owner’s village have been built on.
+          <b>Upgraded Score:</b> 12 VP.
+        </td>
+      </tr>
+      <tr class="store">
+        <td class="title"><div class="store inline"></div><br><div class="keyper-at-sea"></div></td>
+        <td class="title"><b>Wheat store<br></b>Store</td>
+        <td>
+          <b>Score:</b> 4 VP / summer fair tile on this board, up to 4. Upgrade Cost: 1 wheat.
+          <b>Upgraded Score:</b> 2 VP / wheat on this tile, up to 4. <b>Max Score:</b> 16/8 VP.
+        </td>
+      </tr>
+      <tr class="village">
+        <td class="title"><div class="spring inline"></div><br><div class="keyper inline"></div></td>
+        <td class="title"><span class="title-name">Windmill</span><br>Village</td>
+        <td>
+          <b>Action:</b> Convert 1 raw material into 2 wheat.
+          <b>Upgraded Score:</b> 2 VP / wheat, up to 4. <b>Max Score:</b> 8 VP.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
