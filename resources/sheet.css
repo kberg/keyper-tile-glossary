@@ -1,0 +1,116 @@
+table {
+  color: #000000;
+  font-family: Arial;
+  font-size: 10pt;
+  direction: ltr;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+td {
+  padding: 2px 3px 2px 3px;
+  border-bottom: 1px SOLID #666666;
+  word-wrap: break-word;
+}
+
+.key {
+  text-align: center;
+}
+
+.main-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.village {
+  background-color: #ffe599;
+  white-space: normal;
+}
+
+.farm {
+  background-color: #6aa84f;
+  white-space: normal;
+}
+
+.farm-or-village {
+  background-color: #adb540;
+  white-space: normal;
+}
+
+.store {
+  background-color: lightgray;
+  white-space: normal;
+}
+
+.footnote {
+  text-align: left;
+  font-size: 9pt;
+}
+
+.title div {
+  margin: 3px;
+}
+
+.title-name {
+  font-weight: bold;
+}
+
+.inline {
+  display: inline-block;
+}
+
+tr .keyper {
+  background-image: url('./key.png');
+  height: 12px;
+  width: 12px;
+  background-size: 12px, 12px;
+}
+
+tr .character-edition {
+  background-image: url('./character.png');
+  height: 12px;
+  width: 12px;
+  background-size: 12px, 12px;
+}
+
+tr .leader {
+  background-image: url('./crown.png');
+  height: 12px;
+  width: 12px;
+  background-size: 12px, 12px;
+}
+
+tr .keyper-at-sea {
+  background-image: url('./fish.png');
+  height: 8px;
+  width: 16px;
+  background-size: 16px, 10px;
+}
+
+tr .home {
+  background-image: url('./home.png');
+  height: 12px;
+  width: 12px;
+  background-size: 12px;
+}
+
+tr .store {
+  background-image: url('./store.png');
+  height: 16px;
+  width: 12px;
+  background-size: 12px, 12px;
+}
+
+tr .spring {
+  background-image: url('./spring.png');
+  height: 12px;
+  width: 12px;
+  background-size: 12px, 12px;
+}
+
+tr .summer {
+  background-image: url('./summer.png');
+  height: 12px;
+  width: 12px;
+  background-size: 12px, 12px;
+}
